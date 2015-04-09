@@ -1,0 +1,18 @@
+#pragma once
+#include "Vector3.h"
+
+typedef D3DLIGHT9 Light3D;
+
+/// åıåπÉNÉâÉX
+class Light {
+private:
+	Light3D m_light;
+
+public:
+	Light();
+	~Light();
+
+	// è∆ÇÁÇ∑
+	void Illume(Vector3 direction);
+};
+
